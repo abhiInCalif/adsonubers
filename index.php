@@ -50,6 +50,10 @@
     #form-container label {
       float: left;
     }
+
+    #form-container .checkbox {
+      height: 50px;
+    }
   </style>
 
 <!-- jQuery library -->
@@ -90,12 +94,12 @@
       <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone"/>
       <div class="checkbox">
         <label>
-          <input type="checkbox" class="form-control" name="driver" value="Driver"> Driver<br />
+          <input type="checkbox" name="driver" value="Driver"> Driver<br />
         </label>
       </div>
       <div class="checkbox">
         <label>
-          <input type="checkbox" class="form-control" name="owner" value="Business Owner"> Business Owner<br />
+          <input type="checkbox" name="owner" value="Business Owner"> Business Owner<br />
         </label>
       </div>
       <p>
