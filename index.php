@@ -84,13 +84,22 @@
   <div id="form-container" class="form-group">
     <form method="post" action="home.php">
       <label for="name">Name</label>
-      <input type="text" name="name" id="name" placeholder="Name"/>
+      <input type="text" class="form-control" name="name" id="name" placeholder="Name"/>
       <label for="email">Email Address</label>
-      <input type="text" name="email" id="email" placeholder="Email"/>
+      <input type="text" class="form-control" name="email" id="email" placeholder="Email"/>
       <label for="phone" >Phone number</label>
-      <input type="text" name="phone" id="phone" placeholder="Phone"/>
-      <input type="checkbox" name="driver" value="Driver"> Driver<br>
-      <input type="checkbox" name="owner" value="Business Owner"> Business Owner<br>
+      <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone"/>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" class="form-control" name="driver" value="Driver"> Driver
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" class="form-control" name="owner" value="Business Owner"> Business Owner
+        </label>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
     </form>
   </div>
 
