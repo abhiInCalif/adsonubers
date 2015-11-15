@@ -10,18 +10,12 @@
       background: url("/static/images/car-driving-into-sunset.jpg");
       background-size: cover;
       background-position: center;
-      color: white;
       font-family: helvetica;
     }
     p {
       font-size: 22px;
     }
-    input {
-      border: 0;
-      padding: 10px;
-      font-size: 18px;
-    }
-    
+  
     .navbar-default {
     background-color: #FFF;
     }
@@ -87,14 +81,14 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-  <div id="form-container">
+  <div id="form-container" class="form-group">
     <form method="post" action="home.php">
-      <label>Name</label>
-      <input type="text" name="name" />
-      <label>Email Address</label>
-      <input type="text" name="email" />
-      <label>Phone number</label>
-      <input type="text" name="phone" />
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Name"/>
+      <label for="email">Email Address</label>
+      <input type="text" name="email" id="email" placeholder="Email"/>
+      <label for="phone" >Phone number</label>
+      <input type="text" name="phone" id="phone" placeholder="Phone"/>
       <input type="checkbox" name="driver" value="Driver"> Driver<br>
       <input type="checkbox" name="owner" value="Business Owner"> Business Owner<br>
     </form>
