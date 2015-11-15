@@ -85,8 +85,8 @@
     </div><!-- /.container-fluid -->
   </nav>
   <div id="form-container" class="form-group">
-    <h3>I would like to learn more about putting ads on ubers</h3>
-    <form method="post" action="home.php">
+    <h3>I would like to learn more about putting ads on Ubers</h3>
+    <form method="post" action="index.php">
       <label for="name">Name</label>
       <input type="text" class="form-control" name="name" id="name" placeholder="Name"/>
       <label for="email">Email Address</label>
