@@ -12,12 +12,9 @@
       background-position: center;
       font-family: helvetica;
     }
-    p {
-      font-size: 22px;
-    }
   
     .navbar-default {
-    background-color: #FFF;
+      background-color: #FFF;
     }
 
     
@@ -39,11 +36,8 @@
       width: 300px;
     }
 
-    p {
-      color: #000000;
-    }
-
     #form-container {
+      margin-top: 15px;
       background-color: white;
       border-radius: 3px;
       padding: 20px;
@@ -96,15 +90,17 @@
       <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone"/>
       <div class="checkbox">
         <label>
-          <input type="checkbox" class="form-control" name="driver" value="Driver"> Driver
+          <input type="checkbox" class="form-control" name="driver" value="Driver"> Driver<br />
         </label>
       </div>
       <div class="checkbox">
         <label>
-          <input type="checkbox" class="form-control" name="owner" value="Business Owner"> Business Owner
+          <input type="checkbox" class="form-control" name="owner" value="Business Owner"> Business Owner<br />
         </label>
       </div>
-      <button type="submit" class="btn btn-default">Submit</button>
+      <p>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </p>
     </form>
   </div>
 
