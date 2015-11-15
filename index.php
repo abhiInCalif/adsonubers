@@ -55,6 +55,7 @@
       padding: 20px;
       margin-left: auto;
       margin-right: auto;
+      color: black;
     }
   </style>
 
