@@ -121,7 +121,9 @@
 
 <?php
   if($_POST["name"]) {
-      mail("davidscott.pal@gmail.com", "Contact Form Filled", "Name: " . $_POST["name"] . " " . "Email: " . $_POST["email"] . " phone #: " . $_POST["phone"] . " driver? " . $_POST["driver"] . " business owner? " . $_POST["owner"], "From: info@adsonubers.com");
+      mail("abhi1994@gmail.com", "Contact Form Filled", "Name: " . $_POST["name"] . " \r\n" . "Email: " . $_POST["email"] . " phone #: " . $_POST["phone"] . " driver? " . $_POST["driver"] . " business owner? " . $_POST["owner"], "From: info@adsonubers.com");
+      mail("davidscott.pal@gmail.com", "Contact Form Filled", "Name: " . $_POST["name"] . " \r\n" . "Email: " . $_POST["email"] . " phone #: " . $_POST["phone"] . " driver? " . $_POST["driver"] . " business owner? " . $_POST["owner"], "From: info@adsonubers.com");
+
   }
 ?>
 
