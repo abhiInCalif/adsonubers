@@ -37,7 +37,7 @@
     }
 
     #form-container {
-      margin-top: 15px;
+      margin-top: 5px;
       background-color: white;
       border-radius: 3px;
       padding: 20px;
