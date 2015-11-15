@@ -85,7 +85,17 @@
     </div><!-- /.container-fluid -->
   </nav>
   <div id="form-container" class="form-group">
+    <?php
+      if ($_POST["name"]) {
+    ?>
+      <h3>We will be in contact with you soon</h3>
+    <?php
+      } else {
+    ?>
     <h3>I would like to learn more about putting ads on Ubers</h3>
+    <?php
+      }
+    ?>
     <form method="post" action="index.php">
       <label for="name">Name</label>
       <input type="text" class="form-control" name="name" id="name" placeholder="Name"/>
