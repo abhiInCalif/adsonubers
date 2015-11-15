@@ -86,17 +86,17 @@
   </nav>
   <div id="form-container" class="form-group">
     <?php
-      if ($_POST["name"]) {
+      // if ($_POST["name"]) {
     ?>
-      <h3>We will be in contact with you soon</h3>
+      <!-- <h3>We will be in contact with you soon</h3> -->
     <?php
-      } else {
+      // } else {
     ?>
     <h3>I would like to learn more about putting ads on Ubers</h3>
     <?php
-      }
+      // }
     ?>
-    <form method="post" action="index.php">
+<!--     <form method="post" action="index.php">
       <label for="name">Name</label>
       <input type="text" class="form-control" name="name" id="name" placeholder="Name"/>
       <label for="email">Email Address</label>
@@ -116,15 +116,16 @@
       <p>
         <button type="submit" class="btn btn-default">Submit</button>
       </p>
-    </form>
+    </form> -->
+    <iframe src="https://docs.google.com/forms/d/11RPHUOtZcl8bLSALVBR1zq3REY8usQG1-ezdPIns1bg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
   </div>
 
 <?php
-  if($_POST["name"]) {
-      mail("abhi1994@gmail.com", "Contact Form Filled", "Name: " . $_POST["name"] . " \r\n" . "Email: " . $_POST["email"] . " phone #: " . $_POST["phone"] . " driver? " . $_POST["driver"] . " business owner? " . $_POST["owner"], "From: info@adsonubers.com");
-      mail("davidscott.pal@gmail.com", "Contact Form Filled", "Name: " . $_POST["name"] . " \r\n" . "Email: " . $_POST["email"] . " phone #: " . $_POST["phone"] . " driver? " . $_POST["driver"] . " business owner? " . $_POST["owner"], "From: info@adsonubers.com");
+  // if($_POST["name"]) {
+  //     mail("abhi1994@gmail.com", "Contact Form Filled", "Name: " . $_POST["name"] . " \r\n" . "Email: " . $_POST["email"] . " phone #: " . $_POST["phone"] . " driver? " . $_POST["driver"] . " business owner? " . $_POST["owner"], "From: info@adsonubers.com");
+  //     mail("davidscott.pal@gmail.com", "Contact Form Filled", "Name: " . $_POST["name"] . " \r\n" . "Email: " . $_POST["email"] . " phone #: " . $_POST["phone"] . " driver? " . $_POST["driver"] . " business owner? " . $_POST["owner"], "From: info@adsonubers.com");
 
-  }
+  // }
 ?>
 
 </body>
