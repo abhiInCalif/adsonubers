@@ -50,6 +50,11 @@
       margin-left: auto;
       margin-right: auto;
       color: black;
+      width: 50%;
+    }
+
+    #form-container label {
+      float: left;
     }
   </style>
 
