@@ -26,7 +26,6 @@ class Drivers:
         return render.drivers()
 
     def POST(self):
-        import pdb; pdb.set_trace()
         request_data = web.input(first='', last='', email='', phone='', city='', miles='')
         first = request_data.first
         last = request_data.last
