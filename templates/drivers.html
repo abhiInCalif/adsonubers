@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        @font-face {
+            font-family: 'ubercopy'; /*a name to be used later*/
+            src: url('/static/fonts/arkhip/Arkhip_font.ttf'); /*URL to font*/
+        }
+        .navbar-custom {
+            border-radius: 0;
+            opacity: 0.9;
+            height: 64px;
+            padding-top: 7px;
+            font-size: 24px;
+        }
+
+        body {
+            font-family: 'PT Sans Caption', "sans-serif";
+        }
+        p {
+            font-family: "helvetica", "verdana", "sans-serif";
+            font-size: 1.2em;
+        }
+        
+        h2 {
+            font-weight: 100;
+            font-size: 3.3em;
+        }
+
+        #driver-pitch {
+            margin: 10px 0px 0px 0px;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 30px;
+            color: white;
+        }
+
+        .header-container {
+            background: url("/static/images/image2.jpg") no-repeat left top;
+            height: 692px;
+        }
+
+        #driver-form {
+            background-color: #f1f1f1;
+            box-shadow: 0 2px 5px rgba(0,0,0,.15);
+            border: 1px solid rgba(200, 200, 200, 0.4);
+            box-sizing: border-box;
+            padding: 36px;
+            width: 362px;
+        }
+
+        #driver-container {
+            position: relative;
+            top: -210px;
+            right: -15px;
+            margin-top: 0px;
+        }
+
+        h3 {
+            font-size: 19px;
+            text-align: center;
+            font-weight: 500;
+            margin-top: 0px;
+        }
+
+        input {
+            border: 1px solid #dcdcdc;
+            font-size: 0.8em;
+            padding: 8px 12px;
+            height: 44px;
+            width: 100%;
+        }
+
+        #driver-form-container {
+            padding-top: 15px;
+        }
+
+        .driver-btn-custom {
+            font-size: 1em;
+            font-weight: 700;
+            width: 100%;
+            height: 45px;
+        }
+
+        #brand {
+            color: #BDBDBD;
+        }
+
+        #driver-body-container {
+            width: 100%;
+            margin-top: 0px;
+        }
+
+        #driver-body-container img {
+            height: 500px;
+            display:block;
+            padding-left: 50px;
+            margin: 0px auto;
+
+        }
+
+        footer {
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+
+    </style>
+    <!-- jQuery library -->
+    <script src="/static/node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="/static/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="header-container">
+        <nav class="navbar navbar-inverse navbar-custom">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Ads on Top</a>
+                </div>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+        <div class="container">
+            <div id="driver-pitch" class="col-md-8 header-text">
+                <h2><b id="brand">ADS ON TOP</b> NEEDS PARTNERS LIKE YOU.</h2>
+                <p>
+                    Drive with Ads on Top and earn great money as an independent contractor.
+                    Get paid monthly for being part of the rideshare community with our taxi-style
+                    ads on top of your car.
+                </p>
+            </div>
+        </div>
+        <div id="driver-container">
+            <div id="driver-form" class="col-md-4 col-md-offset-8">
+                <div><h3>SIGN UP TO DRIVE</h3></div>
+                <div id="driver-form-container">
+                    <form action="/drivers" method="post">
+                        <div class="form-group">
+                            <div class="row form-row">
+                                <div class="col-md-6 col-xs-6 md-push-right-half">
+                                    <input type="text" value="" name="first" id="first_name" autofocus placeholder="First Name">
+                                </div>
+                                <div class="col-md-6 col-xs-6 md-push-left-half">
+                                    <input type="text" value="" name="last" id="last_name" placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" value="" name="email" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" value="" name="phone" id="contactinfo" placeholder="Mobile Phone">
+                        </div>
+                        <div class="form-group  ">
+                            <input type="text" value="" name="city" id="city_name" placeholder="City">
+                        </div>
+                        <div class="form-group  ">
+                            <input type="text" value="" name="miles" id="distance" placeholder="Miles per Week">
+                        </div>
+                        <div class="col-md-13">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary driver-btn-custom">
+                                    <div id="submitButtonText">NEXT</div>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="driver-body-container">
+        <img src="/static/images/driver_benefits.jpg" />
+    </div>
+    <footer>
+        <p>
+            If you have any questions, please reach out to us at info@theadsontop.com. <br />We hope to do business with you
+            in the future.
+        </p>
+    </footer>
+</body>
+</html>
