@@ -5,7 +5,7 @@ from pymongo import MongoClient
 
 
 urls = (
-    '/', 'Index',
+    '/', 'Drivers',
     '/drivers', 'Drivers',
 )
 
