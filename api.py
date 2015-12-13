@@ -8,6 +8,7 @@ urls = (
     '/', 'Drivers',
     '/driver', 'Drivers',
     '/drivers', 'Drivers',
+    '/about', 'About',
 )
 
 render = web.template.render('templates')
@@ -21,6 +22,10 @@ class Index:
     def GET(self):
         # showcase the index page.
         return render.home()
+
+class About:
+    def GET(self):
+        return render.about()
 
 class Drivers:
     def GET(self):

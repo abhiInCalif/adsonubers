@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        @font-face {
+            font-family: 'ubercopy'; /*a name to be used later*/
+            src: url('/static/fonts/arkhip/Arkhip_font.ttf'); /*URL to font*/
+        }
+        .navbar-custom {
+            border-radius: 0;
+            opacity: 0.9;
+            height: 64px;
+            padding-top: 7px;
+            font-size: 24px;
+        }
+
+        body {
+            font-family: 'PT Sans Caption', "sans-serif";
+        }
+        p {
+            font-family: "helvetica", "verdana", "sans-serif";
+            font-size: 1.2em;
+        }
+
+        h2 {
+            font-weight: 100;
+            font-size: 3.3em;
+        }
+
+        #driver-pitch {
+            margin: 10px 0px 0px 0px;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 30px;
+            color: white;
+        }
+
+        .header-container {
+            background: url("/static/images/image2.jpg") no-repeat left top;
+            height: 434px;
+        }
+
+        h3 {
+            font-size: 19px;
+            text-align: center;
+            font-weight: 500;
+            margin-top: 0px;
+        }
+
+        input {
+            border: 1px solid #dcdcdc;
+            font-size: 0.8em;
+            padding: 8px 12px;
+            height: 44px;
+            width: 100%;
+        }
+
+        #brand {
+            color: whitesmoke;
+        }
+
+        .header-text {
+            text-transform: uppercase;
+            line-height: 75px;
+            font-size: 96px;
+            text-shadow: 0 0 20px rgba(0,0,0,.4);
+            position: relative;
+            top: 45%;
+            display:block;
+            margin: auto;
+            text-align: center;
+        }
+
+        #about-body-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0px auto;
+            padding: 30px 90px 30px 90px;
+            position:relative;
+            top: -125px;
+            display: block;
+            z-index: 2;
+            background-color: black;
+            color: white;
+        }
+
+        #about-body-container img {
+            height: 500px;
+            display:block;
+            padding-left: 50px;
+            margin: 0px auto;
+
+        }
+
+        footer {
+            display: block;
+            margin: -35px auto auto;
+            text-align: center;
+        }
+
+    </style>
+    <!-- jQuery library -->
+    <script src="/static/node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="/static/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="header-container">
+    <nav class="navbar navbar-inverse navbar-custom">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Ads on Top</a>
+            </div>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+    <div class="container">
+        <div id="driver-pitch" class="col-md-12">
+            <h1 class="header-text"><b id="brand">THE COMPANY</b></h1>
+        </div>
+    </div>
+</div>
+<div id="about-body-container">
+    <p>
+        Ads on Top is changing the way we utilize the spaces on top of cars. We are bringing the traditional Taxi-Style advertising
+        world to the top of ridesharing cars everywhere. Our vision is to change taxi style ads from the static single image
+        items they are today to a constantly changing, geo tagged, location based advertising system. We want to bring the traditional
+        taxi ad into the 21st century. Our scrappy culture keeps us motivated to do everything and anything to accomplish
+        this vision.
+
+        Looking to the future,
+
+        Ads on Top founders
+    </p>
+</div>
+<footer>
+    <p>
+        If you have any questions, please reach out to us at info@theadsontop.com. <br />We hope to do business with you
+        in the future.
+    </p>
+</footer>
+</body>
+</html>
