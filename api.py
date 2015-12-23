@@ -10,6 +10,7 @@ urls = (
     '/drivers', 'Drivers',
     '/about', 'About',
     '/business', 'Business',
+    '/request', 'RequestADemo',
 )
 
 render = web.template.render('templates')
@@ -52,7 +53,27 @@ class Drivers:
 
 class Business:
     def GET(self):
-        return render.business()
+        return render.business(False)
+
+    def POST(self):
+        request_data = web.input(first='', last='', email='', phone='', company='')
+        first = request_data.first
+        last = request_data.last
+        email = request_data.email
+        phone = request_data.phone
+        company = request_data.company
+        database().CompanyRecord.insert_one({
+            "first_name": first,
+            "last_name": last,
+            "email": email,
+            "phone": phone,
+            "company": company,
+        })
+        return render.business(True)
+
+class RequestADemo:
+    def GET(self):
+        return render.requestDemo()
 
 if __name__ == "__main__":
     app = web.application(urls, globals())

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+$def with (isRequestDemo)
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -152,6 +152,10 @@
             </div><!-- /.navbar-collapse -->
         </nav>
     </div>
+    $if isRequestDemo:
+        <div class="header-text-div">
+            <h2>Thank you for contacting us. <br />We will be in touch shortly.</h2>
+        </div>
     <div class="header-text-div">
         <h4 class="header-text">FEATURES</h4>
     </div>
@@ -207,9 +211,11 @@
     </div>
     <div>
         <center>
-            <button type="submit" class="btn btn-primary driver-btn-custom">
-                <div id="submitButtonText">Contact a Sales Agent</div>
-            </button>
+            <a href="/request">
+                <button type="submit" class="btn btn-primary driver-btn-custom">
+                    <div id="submitButtonText">Contact a Sales Agent</div>
+                </button>
+            </a>
         </center>
     </div>
 </body>
