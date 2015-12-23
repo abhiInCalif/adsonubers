@@ -42,12 +42,13 @@
             padding-left: 15px;
             padding-right: 15px;
             padding-top: 30px;
-            color: white;
+            color: black;
         }
 
         .header-container {
-            background: url("/static/images/image2.jpg") no-repeat left top;
+            background: url("/static/images/road-sky-clouds-cloudy.jpg") no-repeat left top;
             height: 692px;
+            background-size: 100%;
         }
 
         #driver-form {
@@ -93,7 +94,8 @@
         }
 
         #brand {
-            color: #BDBDBD;
+            /*color: #BDBDBD;*/
+            color: rgba(37, 99, 171, 1);
         }
 
         #driver-body-container {
@@ -115,6 +117,10 @@
             text-align: center;
         }
 
+        .navbar-custom-list {
+            font-size: 20px;
+        }
+
     </style>
     <!-- jQuery library -->
     <script src="/static/node_modules/jquery/dist/jquery.min.js"></script>
@@ -134,6 +140,11 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="/">Ads on Top</a>
+                    <ul class="nav navbar-nav navbar-custom-list">
+                        <li><a href="/business">Business</a></li>
+                        <li><a href="/drivers">Drivers</a></li>
+                        <li><a href="/about">About Us</a></li>
+                    </ul>
                 </div>
             </div><!-- /.navbar-collapse -->
         </nav>

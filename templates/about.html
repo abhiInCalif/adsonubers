@@ -46,8 +46,9 @@
         }
 
         .header-container {
-            background: url("/static/images/image2.jpg") no-repeat left top;
+            background: url("/static/images/road-sky-clouds-cloudy.jpg") no-repeat left top;
             height: 434px;
+            background-size: 100%;
         }
 
         h3 {
@@ -92,6 +93,7 @@
             z-index: 2;
             background-color: black;
             color: white;
+            opacity: 0.95;
         }
 
         #about-body-container img {
@@ -106,6 +108,10 @@
             display: block;
             margin: -35px auto auto;
             text-align: center;
+        }
+
+        .navbar-custom-list {
+            font-size: 20px;
         }
 
     </style>
@@ -127,6 +133,11 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/">Ads on Top</a>
+                <ul class="nav navbar-nav navbar-custom-list">
+                    <li><a href="/business">Business</a></li>
+                    <li><a href="/drivers">Drivers</a></li>
+                    <li><a href="/about">About Us</a></li>
+                </ul>
             </div>
         </div><!-- /.navbar-collapse -->
     </nav>

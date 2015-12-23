@@ -5,10 +5,11 @@ from pymongo import MongoClient
 
 
 urls = (
-    '/', 'Drivers',
+    '/', 'Business',
     '/driver', 'Drivers',
     '/drivers', 'Drivers',
     '/about', 'About',
+    '/business', 'Business',
 )
 
 render = web.template.render('templates')
@@ -48,6 +49,10 @@ class Drivers:
             "miles": miles
         })
         return render.drivers()
+
+class Business:
+    def GET(self):
+        return render.business()
 
 if __name__ == "__main__":
     app = web.application(urls, globals())

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        @font-face {
+            font-family: 'ubercopy'; /*a name to be used later*/
+            src: url('/static/fonts/arkhip/Arkhip_font.ttf'); /*URL to font*/
+        }
+
+        .navbar-custom {
+            border-radius: 0;
+            opacity: 0.9;
+            height: 64px;
+            padding-top: 7px;
+            font-size: 24px;
+        }
+
+        .navbar-custom-list {
+            font-size: 20px;
+        }
+
+        .header-text {
+            display: inline-block;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            background-color: black;
+            padding: 0px 10px 0px 10px;
+            font-size: 10px;
+            font-weight: 500;
+            color: white;
+            text-transform: uppercase;
+            line-height: 23px;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-size: 37px;
+        }
+
+        .header-text-div {
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+        }
+        
+        p {
+            line-height: 27px;
+            font-size: 18px;
+        }
+
+        body {
+            background: #fff url("/static/images/pattern-grid@1x.jpg") repeat left top;
+            background-size: 18px 18px
+        }
+
+        .bullets {
+            list-style: none outside none;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .bullets li {
+            width: 33%;
+            display: inline-block;
+            letter-spacing: normal;
+            word-spacing: normal;
+            vertical-align: top;
+            text-rendering: auto;
+            height: 295px;
+            margin-top: 20px;
+            z-index: 0;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .bullets li div {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 3;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .bullets li div h4 {
+            text-align: center;
+            margin-top: 110px;
+            letter-spacing: 2px;
+            color: white;
+            font-size: 26px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        .bullets li div:hover {
+            background-color: rgba(0,0,0,0);
+            color: black !important;
+        }
+
+        .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -3;
+        }
+
+        .driver-btn-custom {
+            font-size: 1em;
+            font-weight: 700;
+            width: 75%;
+            height: 45px;
+            margin-left: 35px;
+            margin-bottom: 50px;
+            margin-top: 10px;
+            border-radius: 0;
+        }
+
+    </style>
+    <!-- jQuery library -->
+    <script src="/static/node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="/static/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="header-container">
+        <nav class="navbar navbar-inverse navbar-custom">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Ads on Top</a>
+                    <ul class="nav navbar-nav navbar-custom-list">
+                        <li><a href="/business">Business</a></li>
+                        <li><a href="/drivers">Drivers</a></li>
+                        <li><a href="/about">About Us</a></li>
+                    </ul>
+                </div>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+    <div class="header-text-div">
+        <h4 class="header-text">FEATURES</h4>
+    </div>
+    <div>
+        <div class="header-text-div">
+            <h2>ADS ON TOP <br />BENEFITS</h2>
+        </div>
+        <div class="header-text-div">
+            <p>
+                Reach new audiences everywhere
+            </p>
+        </div>
+    </div>
+    <div>
+        <ul class="bullets">
+            <li>
+                <div>
+                    <h4>ADS ON TOP <br /> STAND OUT</h4>
+                </div>
+                <img src="/static/images/stand-out.jpg" class="overlay"/>
+            </li>
+            <li>
+                <div>
+                    <h4>Small budget friendly</h4>
+                </div>
+                <img src="http://i.istockimg.com/file_thumbview_approve/5038974/6/stock-photo-5038974-tiny-hundred-dollar-bill.jpg" class="overlay" />
+            </li>
+            <li>
+                <div>
+                    <h4>Cheaper than <br />most options</h4>
+                </div>
+                <img src="http://i.istockimg.com/file_thumbview_approve/72775701/6/stock-illustration-72775701-businessman-sitting-on-money-stack-with-wheels-move-faster.jpg" class="overlay" />
+            </li>
+            <li>
+                <div>
+                    <h4>Reach <br />an expanded audience</h4>
+                </div>
+                <img src="/static/images/map2.png" class="overlay"/>
+            </li>
+            <li>
+                <div>
+                    <h4>Reach <br />a diversified population</h4>
+                </div>
+                <img src="http://i.istockimg.com/file_thumbview_approve/75620041/5/stock-photo-75620041-students-learning-education-social-media-technology.jpg" class="overlay" />
+            </li>
+            <li>
+                <div>
+                    <h4>Ads are at <br />Eye-Level</h4>
+                </div>
+                <img src="http://i.istockimg.com/file_thumbview_approve/48033470/5/stock-illustration-48033470-eye-flat-icon-with-long-shadow.jpg" class="overlay" />
+            </li>
+        </ul>
+    </div>
+    <div>
+        <center>
+            <button type="submit" class="btn btn-primary driver-btn-custom">
+                <div id="submitButtonText">Contact a Sales Agent</div>
+            </button>
+        </center>
+    </div>
+</body>
+</html>
